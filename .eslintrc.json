@@ -1,3 +1,46 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["prettier"],
+  "extends": ["prettier", "eslint:recommended", "next/core-web-vitals"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "(react|next/)**",
+            "group": "builtin",
+            "position": "before"
+          }
+        ],
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent", "index"],
+          ["object", "type", "sibling"]
+        ],
+        "pathGroupsExcludedImportTypes": []
+      }
+    ]
+  }
 }

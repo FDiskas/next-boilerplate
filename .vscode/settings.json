@@ -1,0 +1,38 @@
+{
+  // TypeScript tweeks
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.surveys.enabled": false,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.autoClosingTags": true,
+  "typescript.preferences.quoteStyle": "single",
+
+  // Keep source code formated
+  "eslint.format.enable": true,
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json][jsonc][html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Turn off style check becouse we use stylelint
+  "stylelint.enable": true,
+  "stylelint.autoFix": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // Editor tweeks
+  "editor.formatOnSave": true,
+  // We dont like comments on our code
+  "editor.tokenColorCustomizations": {
+    "comments": "#d42f2f"
+  },
+  "files.watcherExclude": {
+    "**/.next/*/**": true
+  }
+}

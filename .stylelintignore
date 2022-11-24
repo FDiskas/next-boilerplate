@@ -1,0 +1,3 @@
+build/
+*.tsx
+src/__mocks__/**/*
