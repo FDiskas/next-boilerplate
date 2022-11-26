@@ -34,5 +34,6 @@
   },
   "files.watcherExclude": {
     "**/.next/*/**": true
-  }
+  },
+  "cSpell.words": ["tailwindcss"]
 }

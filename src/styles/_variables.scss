@@ -4,12 +4,15 @@ $background: hsl(0, 0%, 100%);
 $text: hsl(0, 0%, 100%);
 $border: hsl(0, 0%, 92%);
 
+$border-dark: hsl(0, 0%, 13%);
+
 @layer base {
   :root {
     --primary-color: #{$primary};
     --text-color: #{$text};
     --link-color: #{$primary};
     --border-color: #{$border};
+    --border-color-dark: #{$border-dark};
     --border-active-color: #{$primary};
   }
 }
