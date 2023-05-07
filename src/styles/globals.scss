@@ -26,6 +26,6 @@ a {
 
   body {
     color: var(--text-color);
-    background: black;
+    background: var(--background-color, $background);
   }
 }

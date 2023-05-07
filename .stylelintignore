@@ -3,3 +3,5 @@ build/
 src/__mocks__/**/*
 *.js
 *.cjs
+node_modules/
+.next/

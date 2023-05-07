@@ -1,6 +1,6 @@
-/* Theme Light */
+/* Theme Dark */
 $primary: hsl(212, 100%, 50%);
-$background: hsl(0, 0%, 100%);
+$background: hsl(0, 0%, 0%);
 $text: hsl(0, 0%, 100%);
 $border: hsl(0, 0%, 92%);
 $border-dark: hsl(0, 0%, 13%);
@@ -13,5 +13,6 @@ $border-dark: hsl(0, 0%, 13%);
     --border-color: #{$border};
     --border-color-dark: #{$border-dark};
     --border-active-color: #{$primary};
+    --background-color: #{$background};
   }
 }
