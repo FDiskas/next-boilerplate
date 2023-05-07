@@ -8,24 +8,26 @@
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.autoClosingTags": true,
   "typescript.preferences.quoteStyle": "single",
-
   // Keep source code formated
   "eslint.format.enable": true,
-  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json][jsonc][html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // Turn off style check becouse we use stylelint
   "stylelint.enable": true,
   "stylelint.autoFix": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-
   // Editor tweeks
   "editor.formatOnSave": true,
   // We dont like comments on our code
@@ -35,5 +37,7 @@
   "files.watcherExclude": {
     "**/.next/*/**": true
   },
-  "cSpell.words": ["tailwindcss"]
+  "cSpell.words": [
+    "tailwindcss"
+  ],
 }
