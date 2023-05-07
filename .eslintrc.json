@@ -1,6 +1,14 @@
 {
-  "plugins": ["prettier"],
-  "extends": ["prettier", "eslint:recommended", "next/core-web-vitals"],
+  "root": true,
+  "plugins": [
+    "testing-library",
+    "prettier"
+  ],
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "next/core-web-vitals"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -12,7 +20,10 @@
       "version": "detect"
     },
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     },
     "import/resolver": {
       "typescript": {
@@ -21,6 +32,20 @@
       }
     }
   },
+  "env": {
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": [
+        "plugin:testing-library/react"
+      ]
+    }
+  ],
   "rules": {
     "prettier/prettier": "error",
     "import/order": [
@@ -35,9 +60,20 @@
           }
         ],
         "groups": [
-          ["builtin", "external"],
-          ["internal", "parent", "index"],
-          ["object", "type", "sibling"]
+          [
+            "builtin",
+            "external"
+          ],
+          [
+            "internal",
+            "parent",
+            "index"
+          ],
+          [
+            "object",
+            "type",
+            "sibling"
+          ]
         ],
         "pathGroupsExcludedImportTypes": []
       }

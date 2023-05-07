@@ -38,3 +38,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - stylelint + prettier
 - vScode extensions and settings
 - typescript css module support (with autocomplete)
+- jest
+
+
+## TODO
+- [ ] E2E test runner

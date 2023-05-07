@@ -2,7 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-import styles from 'src/styles/Home.module.scss';
+import styles from './Index.module.scss';
 
 export default function Home() {
   return (
