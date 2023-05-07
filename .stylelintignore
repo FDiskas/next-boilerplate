@@ -1,7 +1,8 @@
 build/
-*.tsx
 src/__mocks__/**/*
 *.js
 *.cjs
+*.tsx
+*.ts
 node_modules/
 .next/
